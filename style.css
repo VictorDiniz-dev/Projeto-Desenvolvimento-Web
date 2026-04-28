@@ -68,3 +68,21 @@ h1 {
     transform: scale(1.05);
     filter: brightness(1.1);
 }
+.img-hero-ajustada {
+    /* Define uma altura fixa para a imagem não ficar gigante ou minúscula */
+    width: 100%;
+    height: 400px; /* Você pode aumentar ou diminuir esse valor conforme seu gosto */
+    
+    /* O 'cover' faz a imagem preencher o espaço cortando as bordas, sem achatar a foto */
+    object-fit: cover; 
+    
+    /* Garante que o centro da imagem seja o foco do corte */
+    object-position: center; 
+}
+
+/* Ajuste para telas pequenas (celular) */
+@media (max-width: 768px) {
+    .img-hero-ajustada {
+        height: 250px; /* No celular a imagem fica menor para não ocupar a tela toda */
+    }
+}
