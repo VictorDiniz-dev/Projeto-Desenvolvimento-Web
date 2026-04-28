@@ -1,4 +1,6 @@
-
+.html{
+    scroll-behavior: smooth;
+}
 .navbar-marinho {
     
     background-color: #001f3f !important; 
@@ -10,4 +12,59 @@
 
 .nav-link:hover {
     color: #00a8ff !important;
+}
+
+/* IMPORTANDO FONTES E ÍCONES */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css');
+
+/* VARIÁVEIS PARA CORES REUTILIZÁVEIS */
+:root {
+    --azul-marinho: #001f3f;
+    --azul-claro: #00a8ff;
+}
+
+/* HERO SECTION COM EFEITO DE VIDRO */
+.hero-premium {
+    background: radial-gradient(circle at top right, #003366, #001f3f);
+    padding: 120px 0;
+    min-height: 90vh;
+}
+
+.hero-glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.hero-glass-card:hover {
+    transform: translateY(-10px);
+}
+
+/* ÍCONES DE RECURSOS */
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-size: 2rem;
+    color: white;
+}
+
+/* RESPONSIVIDADE DE TEXTO (A REGRINHA DE OURO) */
+h1 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem); /* Tamanho Mínimo, Ideal e Máximo */
+}
+
+/* ANIMAÇÃO DE BOTÕES */
+.btn-primary {
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
 }
