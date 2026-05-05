@@ -23,6 +23,32 @@
     --azul-claro: #00a8ff;
 }
 
+/* CORREÇÃO: selecionar o elemento html corretamente para comportamento de rolagem */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ESTILOS PARA A TABELA */
+.table-responsive {
+    background: white;
+    padding: 1rem;
+}
+.table thead th {
+    border-top: 0;
+}
+
+/* SEÇÃO DE CONTATO */
+.contact-section {
+    background: #f8fafb;
+}
+
+@media (max-width: 768px) {
+    .table-responsive {
+        padding: 0.5rem;
+        overflow-x: auto;
+    }
+}
+
 /* HERO SECTION COM EFEITO DE VIDRO */
 .hero-premium {
     background: radial-gradient(circle at top right, #003366, #001f3f);
